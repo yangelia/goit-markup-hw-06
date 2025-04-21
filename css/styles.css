@@ -390,11 +390,15 @@ button {
 
 @media screen and (min-width: 768px) {
   .feature-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .feature-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .feature-subtitle {
+    text-align: left;
   }
 }
 
@@ -817,16 +821,13 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .page-footer {
-    padding-left: 108px;
-  }
-
   .page-footer .container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
     justify-content: flex-start;
+    padding-left: 108px;
   }
 
   .footer-info {
@@ -864,6 +865,7 @@ button {
   .page-footer .container {
     justify-content: flex-start;
     gap: 0;
+    padding-left: 15px;
   }
 
   .page-footer {
@@ -1169,23 +1171,26 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  background-color: #404bbf;
+  color: #404bbf;
 }
 
 .mob-menu-link:hover,
 .mob-menu-link:focus,
-.contacts-link:hover,
-.contacts-link:focus,
+.mob-contacts-link:hover,
+.mob-contacts-link:focus,
 .mob-menu-link.current {
   color: #404bbf;
 }
 
 .mobile-menu-contact {
   font-style: normal;
-  /*display: block;*/
   margin-top: auto;
   margin-bottom: 48px;
   width: 100%;
+}
+
+.mob-contacts-link.mark-tel {
+  color: #404bbf;
 }
 
 .mob-contact-list {
@@ -1218,6 +1223,11 @@ button {
 
 .mobile-menu .social-list {
   gap: 40px;
+}
+
+.social-icon.mob-soc-ic {
+  width: 24px;
+  height: 24px;
 }
 
 .mob-close-btn {
